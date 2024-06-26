@@ -102,7 +102,7 @@ router.post(
 
     const paymentIntent = await stripe.paymentIntents.create({
       amount: totalCost * 100,
-      currency: "gbp",
+      currency: "idr",
       metadata: {
         hotelId,
         userId: req.userId,

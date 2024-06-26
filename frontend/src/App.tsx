@@ -16,6 +16,8 @@ import Detail from "./pages/Detail";
 import Booking from "./pages/Booking";
 import MyBookings from "./pages/MyBookings";
 import Home from "./pages/Home";
+import ContactPage from "./pages/ContactPage";
+import AboutUsPage from "./pages/AboutPage";
 
 const App = () => {
   const { isLoggedIn } = useAppContext();
@@ -108,9 +110,12 @@ const App = () => {
             />
           </>
         )}
+        <Route path="/tentang" element={<AboutUsPage />} />
+        <Route path="/kontak" element={<ContactPage />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </Router>
+    
   );
 };
 

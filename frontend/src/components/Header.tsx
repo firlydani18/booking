@@ -1,9 +1,12 @@
-import { Link } from "react-router-dom";
+// import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useAppContext } from "../contexts/AppContext";
 import SignOutButton from "./SignOutButton";
+import brandLogo from "@/assets/brand.png"
 
 const Header = () => {
   const { isLoggedIn } = useAppContext();
+  const  navigate  = useNavigate();
 
   return (
     <div className="bg-blue-800 py-6">
@@ -11,6 +14,15 @@ const Header = () => {
         <span className="text-3xl text-white font-bold tracking-tight">
           <Link to="/">GOLD COAST</Link>
         </span>
+        <ul className="flex items-center gap-x-10">
+          <li className="cursor-pointer flex items-center text-white px-3 font-bold hover:bg-blue-600" onClick={() => navigate("/kontak")}>
+            Kontak
+          </li>
+          <li className="cursor-pointer flex items-center text-white px-3 font-bold hover:bg-blue-600" onClick={() => navigate("/tentang")}>
+            Tentang
+          </li>
+        </ul>
+        
         <span className="flex space-x-2">
           {isLoggedIn ? (
             <>
@@ -35,11 +47,12 @@ const Header = () => {
             >
               Sign In
             </Link>
+            
           )}
         </span>
       </div>
     </div>
   );
-};
+  };
 
 export default Header;

@@ -8,7 +8,7 @@ import verifyToken from "../middleware/auth";
 const router = express.Router();
 
 router.post(
-  "/login",
+  "/api/auth/login",
   [
     check("email", "Email is required").isEmail(),
     check("password", "Password with 6 or more characters required").isLength({
@@ -55,11 +55,11 @@ router.post(
   }
 );
 
-router.get("/validate-token", verifyToken, (req: Request, res: Response) => {
+router.get("/api/auth/validate-token", verifyToken, (req: Request, res: Response) => {
   res.status(200).send({ userId: req.userId });
 });
 
-router.post("/logout", (req: Request, res: Response) => {
+router.post("/api/auth/logout", (req: Request, res: Response) => {
   res.cookie("auth_token", "", {
     expires: new Date(0),
   });
