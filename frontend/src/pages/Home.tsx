@@ -13,31 +13,33 @@ const Home = () => {
   const bottomRowHotels = hotels?.slice(2) || [];
 
   return (
-    <div className="space-y-3 min-h-screen overflow-hidden ">
+    <div className="space-y-2 min-h-screen overflow-hidden ">
       <section
           className="w-full h-[767px] bg-no-repeat bg-cover bg-center relative bg-black/10 bg-blend-soft-light"
           style={{
-            backgroundImage: `url('https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/20025804-3b976a46feb9aacbdcb85a04c09265fe.jpeg?_src=imagekit&tr=c-at_max,f-jpg,h-280,pr-true,q-80,w-412')`,
+            backgroundImage: `url('https://res.klook.com/klook-hotel/image/upload/fl_lossy.progressive,c_fill,f_auto,w_750,q_85/trip/200o190000017widnBC12_R_550_412_R5.jpg')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
           }}
         >
         
-        <div className='w-[1386px] h-[727px] text-[0px] absolute top-[32px] left-1/2 translate-x-[-50.9%] translate-y-0 overflow-hidden z-[5]'>
-            <span className="block h-[75px] font-['Saira_SemiCondensed'] text-[70px] font-medium leading-[75px] text-[#f1f0f0] relative text-center whitespace-nowrap z-[6] mt-[237px] mr-0 mb-0 ml-[365px]">
-              WELCOME GOLD COAST
-            </span>
-            <span className="block h-[110px] font-['Saira_SemiCondensed'] text-[70px] font-medium leading-[110px] text-[#f1f0f0] relative text-center whitespace-nowrap z-[7] mt-[4px] mr-0 mb-0 ml-[365px]">
-              PIK BAHAMA  JAKARTA
-            </span>
-            <span className="block h-[32px] font-['Roboto'] text-[20px] font-medium leading-[23.438px] text-[#f1f0f0] relative text-center whitespace-nowrap z-[8] mt-0 mr-0 mb-0 ml-[365px]">
-              RT.8/RW.2, Kanal Muara, Penjaringan, Nort Jakarta, City, Jakarta 14470
-            </span>
-            <span className="block h-[23px] font-['Roboto'] text-[20px] font-medium leading-[23px] text-[#f1f0f0] relative text-center whitespace-nowrap z-[8] mt-[11px] mr-0 mb-0 ml-[365px]">
-              Telp: 081519386878
-            </span>
-          </div>
+        {/* <div className='w-full h-auto text-[0px] absolute top-[32px] left-1/2 translate-x-[-50%] overflow-hidden z-[5]'> */}
+        <div className=' w-full h-auto text-[0px] absolute top-[32px] left-1/2 translate-x-[-50%] overflow-hidden z-[5]'>
+        <span className="block h-auto font-['Saira_SemiCondensed'] text-[5vw] md:text-[70px] font-medium leading-none text-[#f1f0f0] relative text-center whitespace-nowrap z-[6] mt-[10vw] md:mt-[237px] ml-[5vw] md:ml-[365px]">
+        WELCOME GOLD COAST
+        </span>
+        <span className="block h-auto font-['Saira_SemiCondensed'] text-[5vw] md:text-[70px] font-medium leading-none text-[#f1f0f0] relative text-center whitespace-nowrap z-[7] mt-[1vw] md:mt-[4px] ml-[5vw] md:ml-[365px]">
+        PIK BAHAMA JAKARTA
+        </span>
+        <span className="block h-auto font-['Roboto'] text-[4vw] md:text-[20px] font-medium leading-none text-[#f1f0f0] relative text-center whitespace-nowrap z-[8] ml-[5vw] md:ml-[365px]">
+        RT.8/RW.2, Kanal Muara, Penjaringan, North Jakarta, City, Jakarta 14470
+        </span>
+        <span className="block h-auto font-['Roboto'] text-[4vw] md:text-[20px] font-medium leading-none text-[#f1f0f0] relative text-center whitespace-nowrap z-[8] mt-[2vw] md:mt-[11px] ml-[5vw] md:ml-[365px]">
+        Telp: 081519386878
+        </span>
+        </div>
         </section>
-       
-          
+     
       <div className="grid gap-4">
         <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
           {topRowHotels.map((hotel) => (

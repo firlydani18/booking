@@ -2,9 +2,9 @@ const Hero = () => {
   return (
     <div className="bg-gold-800 pb-16">
       <div className="container mx-auto flex flex-col gap-2">
-        <h1 className="text-5xl text-white font-bold">Find your next stay</h1>
-        <p className="text-2xl text-white">
-          Search low prices on apartemnt for your dream vacation...
+        <h1 className="text-4xl text-black font-bold">Find your next stay</h1>
+        <p className="text-2xl text-black font-[' Cambria ']">
+        Find the most comfortable place in an apartment for your dream holiday, at Gold Coast Apartment PIK Bahama Jakarta
         </p>
       </div>
     </div>
