@@ -53,7 +53,7 @@ const ContactPage: React.FC = () => {
           </div>
         </div>
       </div>
-      <footer className="bg-lime-600 relative bottom-0 w-full text-white py-4">
+      <footer className="bg-blue-800 relative bottom-0 w-full text-white py-4">
         <div className="container mx-auto text-center">
           <p>Hak Cipta © {new Date().getFullYear()} Gold Coast Bahama PIK Jakarta. All rights reserved.</p>
         </div>

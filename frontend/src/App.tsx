@@ -18,6 +18,7 @@ import MyBookings from "./pages/MyBookings";
 import Home from "./pages/Home";
 import ContactPage from "./pages/ContactPage";
 import AboutUsPage from "./pages/AboutPage";
+import MyProfilUser from "./pages/MyProfilUser";
 
 const App = () => {
   const { isLoggedIn } = useAppContext();
@@ -92,17 +93,13 @@ const App = () => {
                 </Layout>
               }
             />
-            <Route
-              path="/my-hotels"
-              element={
+            <Route path="/my-hotels" element={
                 <Layout>
                   <MyHotels />
                 </Layout>
               }
             />
-            <Route
-              path="/my-bookings"
-              element={
+            <Route path="/my-bookings" element={
                 <Layout>
                   <MyBookings />
                 </Layout>
@@ -110,6 +107,14 @@ const App = () => {
             />
           </>
         )}
+         <Route
+          path="/getUser/:userId"
+          element={
+            <Layout>
+              <MyProfilUser />
+            </Layout>
+          }
+        />
         <Route path="/tentang" element={<AboutUsPage />} />
         <Route path="/kontak" element={<ContactPage />} />
         <Route path="*" element={<Navigate to="/" />} />

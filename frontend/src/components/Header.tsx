@@ -12,7 +12,7 @@ const Header = () => {
     <div className="bg-blue-800 py-6">
       <div className="container mx-auto flex justify-between">
         <span className="h-auto text-3xl text-white font-bold tracking-tight">
-          <Link to="/">GOLD COAST</Link>
+          <Link to="/">GOLD COAST APARTEMENT</Link>
         </span>
 
         <span className="flex space-x-2">
@@ -22,10 +22,6 @@ const Header = () => {
             <li className="cursor-pointer flex items-center text-white px-3 font-bold hover:bg-blue-600" onClick={() => navigate("/tentang")}>
               Tentang
             </li>
-            {/* <ul className="flex items-center gap-x-10">
-            
-            </ul> */}
-
           {isLoggedIn ? (
             <>
               <Link
@@ -39,6 +35,12 @@ const Header = () => {
                 to="/my-hotels"
               >
                 My Apartement
+              </Link>
+              <Link
+                className="flex items-center text-white px-3 font-bold hover:bg-blue-600"
+                to="/getUser/:userId"
+              >
+                My Profil
               </Link>
               <SignOutButton />
             </>

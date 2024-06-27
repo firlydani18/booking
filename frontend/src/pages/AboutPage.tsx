@@ -60,17 +60,6 @@ const AboutUsPage: React.FC = () => {
             </p>
           </div>
 
-        {/* <div className="container mx-auto px-20 md:px-40 drop-shadow-lg ">
-          <h1 className="text-5xl font-bold mb-4 text-white z-10 relative">Tentang Kami - Apartement Gold Coast Bahama PIK Jakarta</h1>
-          <p className="text-white text-6x2 font-bold mb-4 pr-30 ">
-          Welcome to Gold Coast Bahamas PIK Jakarta! We are a comfortable and affordable apartment rental place. With a commitment to providing the best service to customers, we strive to be the first choice for those looking for temporary housing. 
-            The apartments is first luxury sea view in the area with five stars facilities, Large windows, open balcony and a beautiful view of the java sea and golf island view. Stay cool with central A/C and wind-down comfortably in the King / queen sized bedroom.
-          </p>
-          <p className="text-white font-bold pr-30 ">
-             Conveniently located in Pantai Indah Kapuk which is just 8 KM from the Jakarta's  Airport (CKG), our apartment will sweep you into the charm and excitements of North of Jakarta facing the Java Sea and Golf Island! Dine at one of our neighbourhood’s  
-             many world-renowned restaurants, enjoy beautiful Indonesia's street food with LIVE music along the Golf Island,.
-          </p>
-        </div> */}
       </div>
       <section className="bg-gray-100 py-12 ">
         <div className="container mx-auto px-4 md:px-20">

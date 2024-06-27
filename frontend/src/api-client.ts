@@ -19,6 +19,39 @@ export const fetchCurrentUser = async (): Promise<UserType> => {
   return response.json();
 };
 
+
+
+
+export const getUser = async (userId : string): Promise<UserType> => {
+  const response = await fetch(`${API_BASE_URL}/api/users/${"userId"}`, { 
+    
+    credentials: "include",
+    });
+    if (!response.ok) {
+      throw new Error("Error fetching user");
+    }
+  
+    return response.json();
+}
+
+
+export const putUser = async  (userFormData: FormData) => {
+  const response = await fetch(
+    `${API_BASE_URL}/api/users/${FormData.get("userId")}`, 
+    {
+    method: "PUT",
+    body: userFormData,
+      credentials: "include",
+    });
+
+      if (!response.ok) {
+        throw new Error("Error fetching user");
+        
+      }
+return response.json();
+};
+
+
 export const register = async (formData: RegisterFormData) => {
   const response = await fetch(`${API_BASE_URL}/api/users/register`, {
     method: "POST",
@@ -35,6 +68,7 @@ export const register = async (formData: RegisterFormData) => {
     throw new Error(responseBody.message);
   }
 };
+
 
 export const signIn = async (formData: SignInFormData) => {
   const response = await fetch(`${API_BASE_URL}/api/auth/login`, {
