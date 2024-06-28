@@ -25,40 +25,35 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route
-          path="/"
+        <Route path="/"
           element={
             <Layout>
               <Home />
             </Layout>
           }
         />
-        <Route
-          path="/search"
+        <Route path="/search"
           element={
             <Layout>
               <Search />
             </Layout>
           }
         />
-        <Route
-          path="/detail/:hotelId"
+        <Route path="/detail/:hotelId"
           element={
             <Layout>
               <Detail />
             </Layout>
           }
         />
-        <Route
-          path="/register"
+        <Route path="/register"
           element={
             <Layout>
               <Register />
             </Layout>
           }
         />
-        <Route
-          path="/sign-in"
+        <Route path="/sign-in"
           element={
             <Layout>
               <SignIn />
@@ -68,8 +63,7 @@ const App = () => {
 
         {isLoggedIn && (
           <>
-            <Route
-              path="/hotel/:hotelId/booking"
+            <Route path="/hotel/:hotelId/booking"
               element={
                 <Layout>
                   <Booking />
@@ -77,8 +71,7 @@ const App = () => {
               }
             />
 
-            <Route
-              path="/add-hotel"
+            <Route path="/add-hotel"
               element={
                 <Layout>
                   <AddHotel />
