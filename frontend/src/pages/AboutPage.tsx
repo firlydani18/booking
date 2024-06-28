@@ -39,10 +39,11 @@ const AboutUsPage: React.FC = () => {
           )}
         </span> */}
       <div
-        className="bg-cover bg-center flex items-center bg-black py-24 2xl:h-[80vh] "
+        className="bg-cover bg-center flex items-center  bg-black py-24 2xl:h-[80vh] relative z-0 "
         style={{
           backgroundImage: 'url("https://cf.bstatic.com/xdata/images/hotel/max500/269066299.jpg?k=cf4cb71793e82d45df81c3f8fa202345a924d55dfee708f3c604dec40a0a4be5&o=&hp=1")',
           filter: "blur(0.2px)",
+          zIndex: -1,
         }}
       >
         

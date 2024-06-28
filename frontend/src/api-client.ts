@@ -20,10 +20,8 @@ export const fetchCurrentUser = async (): Promise<UserType> => {
 };
 
 
-
-
 export const getUser = async (userId : string): Promise<UserType> => {
-  const response = await fetch(`${API_BASE_URL}/api/users/${"userId"}`, { 
+  const response = await fetch(`${API_BASE_URL}/api/users/${userId}`, { 
     
     credentials: "include",
     });
@@ -37,7 +35,7 @@ export const getUser = async (userId : string): Promise<UserType> => {
 
 export const putUser = async  (userFormData: FormData) => {
   const response = await fetch(
-    `${API_BASE_URL}/api/users/${FormData.get("userId")}`, 
+    `${API_BASE_URL}/api/users/${userFormData.get("userId")}`, 
     {
     method: "PUT",
     body: userFormData,
